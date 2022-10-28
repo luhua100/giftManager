@@ -1,2 +1,1 @@
-*.swift linguist-language=swift;
-*.yml linguist-language=swift;
+*.* linguist-language=swift;
