@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'braGiftManager_Example' do
+  pod 'braGiftManager', :path => '../'
+
+  target 'braGiftManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
