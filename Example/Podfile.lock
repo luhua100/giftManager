@@ -1,0 +1,16 @@
+PODS:
+  - braGiftManager (0.1.0)
+
+DEPENDENCIES:
+  - braGiftManager (from `../`)
+
+EXTERNAL SOURCES:
+  braGiftManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  braGiftManager: cd62d53acc46e6b4787d5102e9324408d6d299df
+
+PODFILE CHECKSUM: 62cd1fc0d48ea0b7251e7a8345988501087c0697
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module braGiftManager {
+  umbrella header "braGiftManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
