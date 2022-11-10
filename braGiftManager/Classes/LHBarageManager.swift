@@ -33,7 +33,7 @@ public class LHBarageManager: NSObject {
         //随机生成弹幕的view
         initBrageView()
     }
-    func stop() {
+  public  func stop() {
         if self.stopAnimation == true {
             return
         }
