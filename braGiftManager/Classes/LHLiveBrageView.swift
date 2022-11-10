@@ -14,10 +14,10 @@ enum BarrageStatus : Int {
 
 let padding  = 10
 
-class LHLiveBrageView: UIView {
+public class LHLiveBrageView: UIView {
 
     /**弹幕弹道 说白点就是frame.origin.y*/
-    var barrageChannel : Int = 0
+  public  var barrageChannel : Int = 0
     
     /**弹幕的状态*/
     var barrageStatusBlock : ((BarrageStatus) ->())?
@@ -44,7 +44,7 @@ class LHLiveBrageView: UIView {
         
     }
     
-    func startAnimation() {
+    public func startAnimation() {
         
         //动画的改变其实是改变 当前视图的X 坐标
         if let event = self.barrageStatusBlock {
@@ -67,7 +67,7 @@ class LHLiveBrageView: UIView {
         }
     }
     
-    func stopAnimation() {
+  public  func stopAnimation() {
         self.layer.removeAllAnimations()
         self.removeFromSuperview()
         NSObject.cancelPreviousPerformRequests(withTarget: self)
