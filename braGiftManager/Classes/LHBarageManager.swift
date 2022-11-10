@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LHBarageManager: NSObject {
+public class LHBarageManager: NSObject {
     //数据源
    public var sourceArray  : NSMutableArray = NSMutableArray.init()
     //弹幕的数组
