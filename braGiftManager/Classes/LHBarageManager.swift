@@ -9,7 +9,7 @@ import UIKit
 
 class LHBarageManager: NSObject {
     //数据源
-    var sourceArray  : NSMutableArray = NSMutableArray.init()
+   public var sourceArray  : NSMutableArray = NSMutableArray.init()
     //弹幕的数组
     var barraArray  : NSMutableArray = NSMutableArray.init()
     //存储弹幕的view
@@ -17,7 +17,7 @@ class LHBarageManager: NSObject {
     //是否停止
     var stopAnimation : Bool  = true
     
-    var startCreatBarrageBlock : ((LHLiveBrageView) ->())?
+  public  var startCreatBarrageBlock : ((LHLiveBrageView) ->())?
     override init() {
         super.init()
         stopAnimation = true
