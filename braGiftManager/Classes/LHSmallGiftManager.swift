@@ -1,13 +1,13 @@
 import UIKit
 
-class LHSmallGiftManager: NSObject {
+public class LHSmallGiftManager: NSObject {
   
     var completeBlock : ((Bool)->())?
     var completeShowGifImageBlock : ((LHGiftModel)->())?
     
     let giftMaxNum  = 999
     
-    static let shareManager = LHSmallGiftManager()
+   public static let shareManager = LHSmallGiftManager()
     
     //创建两个队列 最多显示两组小礼物
     lazy var giftQueue1: OperationQueue = {
@@ -81,7 +81,7 @@ class LHSmallGiftManager: NSObject {
     
   
     //送礼物(不处理第一次展示当前礼物逻辑)
-    func showGiftViewWithBackView(_ view : UIView , _ giftModel : LHGiftModel, _ completeBlock : (()->())?)  {
+  public  func showGiftViewWithBackView(_ view : UIView , _ giftModel : LHGiftModel, _ completeBlock : (()->())?)  {
         self.showGiftViewWithBackView(view, giftModel, completeBlock, nil)
     }
     //送礼物(回调第一次展示当前礼物的逻辑)
